@@ -1,0 +1,20 @@
+<section class="home-works view-wrapper bg-black-2 tc white">
+    <span class="f2 fw9">{{ .heading }}</span>
+    <div class="container-table">
+        {{ range $index, $element := .content }}
+        {{ if modBool $index 2 }}
+        <div class="{{ if modBool $index 4 }} even-row {{else}} odd-row {{end}} col">
+            <div class="col">
+                <h3>{{ .heading }}</h3>
+                <p>{{ .text }}</p>
+            </div>
+            {{ else }}
+            <div class="col">
+                <h3>{{ .heading }}</h3>
+                <p>{{ .text }}</p>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
