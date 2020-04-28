@@ -6,6 +6,7 @@
   <div class="container">
     {{ block "header" . }}{{ partial "nav" . }}{{end}}
     {{ block "main" . }}{{ end }}
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   </div>
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}

@@ -1,11 +1,18 @@
 ---
 page: home
 title: CELL 5
-subtitle: building today's start-up technology
+heading: >
+    start today
+
+
+    scale tomorrow
 image: img/cell5/cell-5-logo-black.svg
 bannerImg: img/banner-2.png
 text: >
-    We will help you to blend a high-value technology team, then partner with you to deliver your start-up or scale-up technology product until your goals are met.
+    we are technology experts delivering 
+    
+    
+    scalable start-up solutions
 footer: >
     If you are not ready to engage with us yet and have questions or need more convincing, invite us to pitch to you. **[Let us Pitch?](/contact)**
 preludes:
