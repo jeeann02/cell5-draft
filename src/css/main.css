@@ -111,6 +111,26 @@ img {
 }
 
 /*-- These are custom CSS for HTML tags -- */
+/*List*/
+.social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.social-media ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  cursor: pointer;
+}
+
 /*Heading*/
 .blog-1 h3 {
     font-size: 2.5rem;
