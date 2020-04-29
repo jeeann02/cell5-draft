@@ -62,7 +62,14 @@ img {
 }
 
 
-/*Box containers - custom*/
+/*-- These are custom CSS for Shapes -- */
+.v-line{
+    border-left: 2px solid #D2D2D2;
+    height: 75%;
+}
+
+/*-- These are custom CSS for Containers -- */
+/*Box*/
 .container {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
@@ -77,6 +84,7 @@ img {
     display: block;
 }
 
+/*Table*/
 .container-table {
     width: 100%;
     height: 100%;
@@ -102,7 +110,8 @@ img {
     -webkit-overflow-scrolling: touch;
 }
 
-/*Heading Tags - custom*/
+/*-- These are custom CSS for HTML tags -- */
+/*Heading*/
 .blog-1 h3 {
     font-size: 2.5rem;
     line-height: 3.5rem;
@@ -117,13 +126,20 @@ img {
     margin-bottom: 1rem;
 }
 
+/*Paragraph*/
+.blog p {
+    padding: var(--spacing-large);
+}
+
+/*-- These are custom CSS for alignment and positions -- */
 /*Horizontal Alignment*/
 .center {
     margin-right: auto;
     margin-left: auto;
 }
 
-/*CSS By Page*/
+/*-- These are custom CSS by Page-- */
+/*Home Page*/
 .home .banner{
     font-size: 5.625rem;
     font-weight: bold;

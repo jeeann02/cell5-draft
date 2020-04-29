@@ -16,7 +16,7 @@
     {{ end }}
     {{ end }}
     {{ if .moreLink  }}
-    <button onclick='OnClickButtonLink("{{ .linkUrl }}")' class="bg-primary f6 b mt5 fs-normal lh-blog">
+    <button class="bg-primary f6 b mt5 fs-normal lh-blog" onclick="window.location.href = '{{ .linkUrl}}'">
         {{ .moreLink }}
     </button>
     {{ end }}

@@ -31,6 +31,13 @@
   left: 0;
 }
 
+.absolute--center {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 @media (--breakpoint-not-small) {
   .top-0-ns     { top:   0; }
   .left-0-ns    { left:  0; }

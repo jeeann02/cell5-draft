@@ -16,6 +16,8 @@
   .lh-solid-m { line-height: 1rem; }
   .lh-title-m { line-height: 1.25rem; }
   .lh-copy-m  { line-height: 1.5rem; }
+
+  .lh-large-l { line-height: 5rem; }
 }
 
 @media (--breakpoint-large) {
