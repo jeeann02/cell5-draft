@@ -75,4 +75,5 @@
   .fn-l { font-size: var(--spacing-medium); }
   .fs-l { font-size: .875rem; }
   .fxs-l { font-size: .75rem; }
+  .f-title-l { font-size: 3.75rem; }
 }

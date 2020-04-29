@@ -54,4 +54,12 @@ HowWeWork:
 
 
     Once we start, we optimize for fast paced delivery of the right features while maximizing discovery and sustainability.  Our objective here is a product in customers hands that improves their lives.
+
+TechWeKnow: 
+  heading: Tech We Know
+  text: >
+    We have shipped products with these technologies in last 18 months
+  lists: 
+    - name: ""
+      description: ""
 ---
