@@ -15,10 +15,11 @@ text: >
     scalable start-up solutions
 footer: >
     If you are not ready to engage with us yet and have questions or need more convincing, invite us to pitch to you. **[Let us Pitch?](/contact)**
+
 work: 
-  - heading: >
+    heading: >
       Read about some of the recent products we have shipped:
-    linkUrl: /OurWork
+    linkUrl: "#"
     moreLink: See more of our work
     content:
       - heading: MVP > scale > pivot

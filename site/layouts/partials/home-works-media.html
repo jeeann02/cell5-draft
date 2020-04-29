@@ -1,20 +1,23 @@
-<section class="home-works view-wrapper bg-black-2 tc white">
-    <span class="f2 fw9">{{ .heading }}</span>
-    <div class="container-table">
-        {{ range $index, $element := .content }}
-        {{ if modBool $index 2 }}
-        <div class="{{ if modBool $index 4 }} even-row {{else}} odd-row {{end}} col">
-            <div class="col">
-                <h3>{{ .heading }}</h3>
-                <p>{{ .text }}</p>
-            </div>
-            {{ else }}
-            <div class="col">
-                <h3>{{ .heading }}</h3>
-                <p>{{ .text }}</p>
-            </div>
+<div class="mw8 center">
+    <div class="f5 fw9 lh-header mb3">{{ .heading }}</div>
+    {{ range $index, $element := .content }}
+    {{ if modBool $index 2 }}
+    <div class="container-table {{ if modBool $index 4 }}blog-1{{else}}blog-2{{end}} fw9 lh-blog f6">
+        <div class="col">
+            <h3>{{ .heading }}</h3>
+            <p>{{ .text }}</p>
         </div>
-        {{ end }}
-        {{ end }}
+        {{ else }}
+        <div class="col">
+            <h3>{{ .heading }}</h3>
+            <p>{{ .text }}</p>
+        </div>
     </div>
-</section>
+    {{ end }}
+    {{ end }}
+    {{ if .moreLink  }}
+    <button onclick='OnClickButtonLink("{{ .linkUrl }}")' class="bg-primary f6 b mt5 fs-normal lh-blog">
+        {{ .moreLink }}
+    </button>
+    {{ end }}
+</div>

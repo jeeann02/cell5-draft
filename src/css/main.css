@@ -50,7 +50,11 @@ svg{
 button {
     border: none;
     outline: none;
-    background: transparent;
+    color: inherit;
+    border-radius: 5px;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 5px 50px;
 }
 
 img {
@@ -58,13 +62,12 @@ img {
 }
 
 
-/*Box containers*/
+/*Box containers - custom*/
 .container {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    height: 100%;
     position: relative;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -74,19 +77,51 @@ img {
     display: block;
 }
 
+.container-table {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: table;
+}
+
+.container-table .col {
+    display: table-cell;
+    width: 50%;
+    border-top: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+    padding: 2rem 1rem;
+}
+
+.container-table .col:last-child {
+    border-right: none;
+}
+
 .view-wrapper {
     height: calc(100% - 5px);
     position: relative;
     -webkit-overflow-scrolling: touch;
 }
 
+/*Heading Tags - custom*/
+.blog-1 h3 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: #AA6BF1;
+    margin-bottom: 1rem;
+}
 
-/*Vertical Alignment*/
+.blog-2 h3{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: #46D9FC;
+    margin-bottom: 1rem;
+}
+
+/*Horizontal Alignment*/
 .center {
     margin-right: auto;
     margin-left: auto;
 }
-
 
 /*CSS By Page*/
 .home .banner{
@@ -104,35 +139,4 @@ img {
 .home .text{
     font-size: 2.5rem;
     font-weight: bold;
-}
-
-.home-works .container-table {
-  width: 80%;
-  margin: 0 auto;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.home-works .container-table .col {
-  float: left;
-  width: 50%;
-}
-
-
-.home-works .even-row h3 {
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 64px;
-    text-align: center;
-
-    color: #AA6BF1;
-}
-
-.home-works .odd-row h3{
-    font-size: 48px;
-    line-height: 64px;
-    text-align: center;
-
-    color: #46D9FC;
 }
