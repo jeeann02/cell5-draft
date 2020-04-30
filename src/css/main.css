@@ -129,8 +129,11 @@ img {
   cursor: pointer;
 }
 
-.checklist ul {
-    list-style-image: url('/img/SVG/checklist.svg');
+.checklist li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
 }
 
 /*Heading*/

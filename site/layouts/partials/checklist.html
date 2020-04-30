@@ -1,7 +1,8 @@
-<div class="checklist">
-    <ul>
-        {{ range $index, $element := .lists }}
-        <li>{{ .text }}</li>
-        {{ end }}
-    </ul>
+<div class="checklist tl">
+    {{ range $index, $element := .lists }}
+    <li>
+        <img src="/img/SVG/checkmark.svg" class="v-mid" />
+        <div class="f6 b fs-normal">{{ .text }}</div>
+    </li>
+    {{ end }}
 </div>
