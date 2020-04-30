@@ -8,6 +8,8 @@ heading: >
     scale tomorrow
 image: img/cell5/cell-5-logo-black.svg
 bannerImg: img/banner-2.png
+moreLink: Get In Touch
+linkUrl: "#"
 text: >
     we are technology experts delivering 
     
@@ -62,4 +64,21 @@ TechWeKnow:
   lists: 
     - name: ""
       description: ""
+
+qualifications:
+  heading: Are we a fit for you?
+  lists:
+    - text:  Your organization is between 1-50 people
+    - text:  You plan to launch in under 3 months or are already live
+    - text:  Your budget is at least £5K or £500 a week
+    - text:  You are happy with a remote-first delivery
+    - text:  You respect our values
+
+feedbacks:
+  heading: What our clients say...
+  lists:
+    - name: John Thumb
+      company: ""
+      text: >
+        “Cell 5 picked up our Laravel PHP project launched it and supported it. At amazing rates.”
 ---

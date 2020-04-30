@@ -16,8 +16,8 @@
     {{ end }}
     {{ end }}
     {{ if .moreLink  }}
-    <button class="bg-primary f6 b mt5 fs-normal lh-blog" onclick="window.location.href = '{{ .linkUrl}}'">
-        {{ .moreLink }}
-    </button>
+    <div class="mt5">
+        {{ partial "cta" (dict "moreLink" .moreLink "linkUrl" .linkUrl)}}
+    </div>
     {{ end }}
 </div>

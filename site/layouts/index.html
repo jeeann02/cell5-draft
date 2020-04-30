@@ -27,6 +27,22 @@
     </div>
     {{ partial "waves" (dict "svg" "waves-3" "viewbox" "0 0 1920 397") }}
 </section>
+<section class="view-wrapper tc bg-white">
+    <div class="mw9 center h-100 relative">
+        <div class="absolute absolute--center v-line"></div>
+        <div class="row w-100">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ph4">
+                {{ partial "title" .Params.qualifications }}
+                {{ partial "checklist" .Params.qualifications }}
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ph4">
+            </div>
+        </div>
+        <div class="white">
+            {{ partial "cta" (dict "moreLink" .Params.moreLink "linkUrl" .Params.linkUrl)}}
+        </div>
+    </div>
+</section>
 
 {{ partial "svg-waves" . }}
 

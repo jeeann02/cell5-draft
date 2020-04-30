@@ -129,6 +129,10 @@ img {
   cursor: pointer;
 }
 
+.checklist ul {
+    list-style-image: url('/img/SVG/checklist.svg');
+}
+
 /*Heading*/
 .blog-1 h3 {
     font-size: 2.5rem;

@@ -1,0 +1,7 @@
+<div class="checklist">
+    <ul>
+        {{ range $index, $element := .lists }}
+        <li>{{ .text }}</li>
+        {{ end }}
+    </ul>
+</div>
