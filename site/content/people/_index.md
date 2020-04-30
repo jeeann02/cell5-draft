@@ -1,5 +1,6 @@
 ---
 page: whoweare
-title: CELL 5
+title: Who We Are
+imageUrl: img/SVG/WhoWeAre.svg
 
 ---

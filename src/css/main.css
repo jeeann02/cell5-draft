@@ -168,14 +168,14 @@ img {
 /*-- These are custom CSS by Page-- */
 /*Home Page*/
 .home .banner{
-    font-size: 5.625rem;
+    font-size: 5rem;
     font-weight: bold;
     line-height: 7.5rem;
     margin-bottom: var(--spacing-large);
 }
 
 .home .banner p:first-of-type{
-    font-size: 9.375rem;
+    font-size: 9rem;
     font-weight: 900;
 }
 
