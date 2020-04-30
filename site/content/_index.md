@@ -77,8 +77,14 @@ qualifications:
 feedbacks:
   heading: What our clients say...
   lists:
-    - name: John Thumb
-      company: ""
+    - name: Owner
+      company: Aphex
+      imageUrl: /img/clients/aphex-screenshot.jpg
+      text: >
+        “Cell 5 picked up our Laravel PHP project launched it and supported it. At amazing rates.”
+    - name: Owner
+      company: myval
+      imageUrl: /img/clients/myval-screenshot.jpg
       text: >
         “Cell 5 picked up our Laravel PHP project launched it and supported it. At amazing rates.”
 ---

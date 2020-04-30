@@ -44,6 +44,14 @@
   background-color: var(--primary);
 }
 
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-dark-blue{
+  background-color: var(--dark-blue);
+}
+
 .bg-highlight {
   background-color: var(--highlight);
 }
