@@ -3,8 +3,11 @@
 @import "./imports/_media-queries";
 
 /*Elemnts CSS*/
+@import "./imports/_borders";
+@import "./imports/_border-colors";
 @import "./imports/_colors";
 @import "./imports/_coordinates";
+@import "./imports/_flexbox";
 @import "./imports/_font-style";
 @import "./imports/_font-weight";
 @import "./imports/_heights";
@@ -21,7 +24,6 @@
 
 /*Custom CsS*/
 @import "./imports/carousel";
-@import "./imports/bootstrap";
 @import "./imports/custom_nav";
 
 * {
@@ -61,10 +63,23 @@ img {
     max-width: 100%;
 }
 
+@media screen and (--breakpoint-medium) {
+  html {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (--breakpoint-extra-large) {
+  html {
+    font-size: 1em;
+  }
+}
+
 /*-- These are custom CSS for Shapes -- */
-.v-line{
-    border-left: 2px solid #D2D2D2;
-    height: 75%;
+.h-line{
+    border-top: 2px solid #000000;
+    width: 50%;
+    margin: 20px auto;
 }
 
 /*-- These are custom CSS for Containers -- */
@@ -83,30 +98,16 @@ img {
     display: block;
 }
 
-/*Table*/
-.container-table {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: table;
-}
-
-.container-table .col {
-    display: table-cell;
-    width: 50%;
-    border-top: 1px solid #E0E0E0;
-    border-right: 1px solid #E0E0E0;
-    padding: 2rem 1rem;
-}
-
-.container-table .col:last-child {
-    border-right: none;
-}
-
 .view-wrapper {
     height: calc(100% - 5px);
     position: relative;
     -webkit-overflow-scrolling: touch;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 5px;
+    height: 100%;
 }
 
 /*-- These are custom CSS for HTML tags -- */
@@ -167,23 +168,54 @@ img {
 
 /*-- These are custom CSS by Page-- */
 /*Home Page*/
-.home .banner{
-    font-size: 5rem;
-    font-weight: bold;
-    line-height: 7.5rem;
-    margin-bottom: var(--spacing-large);
-}
-
-.home .banner p:first-of-type{
+.home h1 {
     font-size: 9rem;
     font-weight: 900;
 }
 
-.home .text{
+.home h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home p {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.clients img {
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+.home-techs-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
 }
+
+.home-techs-gallery img{
+    margin: 10px;
+    max-width: 60px;
+    height: 60px;
+}
+
+/*People Page*/
+.people-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.people-gallery img {
+    margin: 10px;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 150px;
+    height: 150px;
+}
+
+@media only screen and (--breakpoint-medium) {
+    .people img {
+        position: absolute;
+        width: 80%;
+    }
+}
+
+

@@ -1,0 +1,25 @@
+<div class="mw9 cener ph4">
+    <div class="flex-m flex-row-m flex-wrap-m w-100 pt5">
+        <div class="w-50-m">
+            <div class="people-gallery">
+                {{ range $index, $element := .people }}
+                <div id="{{ .name }}" onclick='ShowPeopleData("{{ $element | jsonify }}")'>
+                    <img src="{{ .imageUrl }}" />
+                </div>
+                {{ end }}
+
+            </div>
+        </div>
+        <div class="w-50-m">
+            {{ range $index, $element := .people }}
+            {{ if eq $index 0}}
+            <div id="people-data" class="tl fs-normal lh-headline">
+                <h1 id="name-data" class="f-subheadline-ns fw9">{{ .name }}</h1>
+                <h3 id="title-data" class="f3 b lh-header">{{ .title }}</h3>
+                <p id="bio-data" class="f6 b lh-header pv3">{{ .bio }}</p>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
