@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./components/home";
-// import BlogTable from "./components/blog-table";
+import BlogTable from "./components/blog-table";
 
 export default class PostPreview extends React.Component {
   render() {
@@ -17,7 +17,7 @@ export default class PostPreview extends React.Component {
         <Home image={image} heading={entry.getIn(["data", "heading"])} text={entry.getIn(["data", "text"])} />
 
         <div class="view-wrapper bg-black-2 tc white">
-          {/* <BlogTable heading={entry.getIn(["data", "OurWork.heading"])} moreLink={entry.getIn(["data", "OurWork.moreLink"])} content={entry.getIn(["data", "OurWork.content"])} /> */}
+          <BlogTable heading={entry.getIn(["data", "OurWork.heading"])} moreLink={entry.getIn(["data", "OurWork.moreLink"])} content={entry.getIn(["data", "OurWork.content"])} />
 
           <svg aria-hidden="true" viewBox="0 0 1920 388">
             <path opacity="0.5"
