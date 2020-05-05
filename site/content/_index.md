@@ -1,8 +1,11 @@
 ---
 page: home
-title: Cell 5
-header: start today
-subHeader:  scale tomorrow
+title: CELL 5
+heading: '
+# start today
+
+
+## scale tomorrow'
 image: img/cell5/cell-5-logo-black.svg
 bannerImg: img/banner-2.png
 moreLink: Get In Touch
@@ -12,9 +15,6 @@ text: >
     
     
     scalable start-up solutions
-footer: >
-    If you are not ready to engage with us yet and have questions or need more convincing, invite us to pitch to you. **[Let us Pitch?](/contact)**
-
 OurWork: 
   heading: >
     Read about some of the recent products we have shipped:
