@@ -37,7 +37,6 @@ export default class Jumbotron extends React.Component {
                     {moreLink}
                 </button>
             </div>
-            {{ end }}
         </div>
 
     }
